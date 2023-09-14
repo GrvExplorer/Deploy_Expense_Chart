@@ -1,5 +1,6 @@
 import styles from './MyBalance.module.css'
 import circle from '../assets/circle.svg'
+import React from 'react'
 
 
 const MyBalance = () => {

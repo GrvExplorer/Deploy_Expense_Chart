@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import ChartBar from "../chartBar/ChartBar";
+import React from 'react'
+
 import styles from "./SpendingChartTotal.module.css";
+import { checkPropTypes } from "prop-types";
 
 const SpendingCharTotal = ({ data }) => {
   return (
@@ -21,6 +24,9 @@ const SpendingCharTotal = ({ data }) => {
     </div>
   );
 };
+SpendingCharTotal.propTypes = {
+  data: checkPropTypes.node
+}
 
 export default SpendingCharTotal;
 

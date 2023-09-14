@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import styles from "./ChartBar.module.css";
+import { checkPropTypes } from "prop-types";
+import React from 'react'
+
 
 const ChartBar = ({ data }) => {
   return (
@@ -19,8 +22,14 @@ const ChartBar = ({ data }) => {
     </div>
   );
 };
+ChartBar.propTypes = {
+  data: checkPropTypes.node
+}
+
+
 
 export default ChartBar;
+
 
 const Bar = styled.div`
   border-radius: 6px;
